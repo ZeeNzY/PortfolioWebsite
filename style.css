@@ -1,0 +1,286 @@
+@media (min-width: 45em) {
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.justify, .points{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: .5em 1.25em;
+  background: var(--clr-accent, purple);
+  border-radius: .25em;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+.landing {
+  color: #eee;
+  padding: 5em 0;
+  background-image: url("zee2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+}
+
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 20px ;
+}
+
+#page2 {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 100%;
+}
+
+.content {
+  background: #eee;
+}
+
+.skill{
+  background: #333;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .skill:hover{
+  background-color: #555;
+}
+.skill:after{
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active after{
+    content: "\2212";
+  }
+
+  .skillcontent{
+    padding: 0 19px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+
+  }
+
+.contact-form{
+  margin: 0 auto;
+}
+
+.contact-form input, textarea{
+  display:block;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+}
+.contact-form textarea{
+ height: 100px;
+}
+
+
+button:hover {
+background-color:#8e998f;
+cursor: pointer;
+}
+.git, .lnk, .resume{
+padding: 14px;
+margin: 5px;
+border-radius: 8px;
+background-color: #333;
+color: white;
+}
+#snd{
+background-color: #333;
+color: white;
+border-radius: 8px;
+padding-right: 15px;
+width: 15%;
+
+}
+#snd:hover{
+background-color:#8e998f;
+cursor: pointer;
+}
+
+
+
+/*footer*/
+
+
+.footer {
+	background: #303036;
+	color: #d3d3d3;
+	height: 400px;
+	position: relative;
+}
+
+.footer .footer-bottom{
+
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+.footer-content  .footer-content h5 {
+    color: white;
+}
+
+.footer .footer-content .links span {
+    display: block;
+    font-size:  1.1em;
+    margin-bottom: 8px;
+    margin-top: 5%;
+    color: whitesmoke;
+}
+
+.footer .footer-content .quicklinks ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    margin-left: 5%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/** bar chart **/
+
+.bargraph {
+    list-style: none;
+    padding-top: 20px;
+    width:100%;
+    }
+
+    ul.bargraph li {
+        height: 35px;
+        color: white;
+        text-align: left;
+        font-style: italic;
+        font-weight:bolder;
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0px 20px;
+        margin-bottom: 5px;
+        }
+
+        ul.bargraph li.java {
+            background: #ED1C24;
+            width:80%;
+            }
+             
+            ul.bargraph li.c {
+            background: #EF465B;
+            width:40%;
+            }
+             
+            ul.bargraph li.sql {
+            background: #E55A6B;
+            width:65%;
+            }
+             
+            ul.bargraph li.pl {
+            background: #E28159;
+            width:40%;
+            }
+             
+            ul.bargraph li.html {
+            background: #F99C1C;
+            width:90%;
+            }
+             
+            ul.bargraph li.css {
+            background: #F4D41E;
+            width:90%;
+            }
+
+/**End Bar**/
+          }
