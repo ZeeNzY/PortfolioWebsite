@@ -61,10 +61,12 @@ body {
 }
 
 h1,
-h2,
-h3,
 p {
   margin: 0;
+}
+
+.column{
+  margin-top: -5%;
 }
 
 .justify, .points{
@@ -137,7 +139,6 @@ p {
 .column {
   float: left;
   width: 100%;
-  
 }
 
 .content {
