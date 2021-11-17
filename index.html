@@ -12,6 +12,18 @@
 
 <body>
   <main class="content">
+
+    
+      <div class="box stack-top" style="background: purple;">
+          <h1 id="resumeH">Resume</h1>
+          <a href="Resume_Of_Zinziswa_Gulwa.pdf" download>
+            <button id="downloadBtn">DOWNLOAD</button>
+          </a>
+      </div>
+      
+
+
+
     <header class="landing">
       <div class="container spacing">
         <br>
@@ -19,7 +31,7 @@
         <br>
         <br>
         <br><br>
-        <p>A Visionary.<br>
+        <p class="para">A Visionary.<br>
           A qualified Junior Software/Applications Developer, with Love for photography.<br>
           My area of expertise has been on Back End development. <br>
           Currently based in the City of Cape Town.
@@ -68,7 +80,7 @@
                   <li>SQL</li>
                   <li>PL/SQL</li>
                   <li>Microsoft office suite</li>
-                  <li>UML</li>
+                  <li>UML/Database Structure</li>
                   </ul>
               </div>
 
@@ -179,7 +191,6 @@
 <script>
   var coll= document.getElementsByClassName("skill");
   var i;
-
   for(i= 0; i < coll.length; i++){
     coll[i].addEventListener("click", function(){
       this.classList.toggle("active");
@@ -211,10 +222,8 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
-      
     }
-
-
+    //download Resume 
 </script>
 
 
